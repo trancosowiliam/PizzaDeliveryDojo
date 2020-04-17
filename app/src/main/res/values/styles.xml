@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Text" >
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Label" parent="Text">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginStart">@dimen/normal_margin</item>
+        <item name="android:layout_marginTop">@dimen/simple_margin</item>
+        <item name="android:paddingStart">3dp</item>
+    </style>
+
+    <style name="EditText" parent="Text">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="FormEditText" parent="EditText">
+        <item name="android:layout_marginStart">@dimen/normal_margin</item>
+        <item name="android:layout_marginEnd">@dimen/normal_margin</item>
+
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">actionNext</item>
+    </style>
+
+    <style name="Button" parent="Text">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="FormButton" parent="Button">
+        <item name="android:layout_marginStart">@dimen/normal_margin</item>
+        <item name="android:layout_marginEnd">@dimen/normal_margin</item>
+        <item name="android:background">@drawable/btn</item>
+        <item name="android:textColor">#94FFFFFF</item>
+    </style>
+</resources>
