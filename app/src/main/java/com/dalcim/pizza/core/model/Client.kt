@@ -1,4 +1,4 @@
-package com.dalcim.pizza.domain
+package com.dalcim.pizza.core.model
 
 data class Client(
     val id: Int = 0,

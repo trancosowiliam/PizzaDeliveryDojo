@@ -1,11 +1,11 @@
-package com.dalcim.pizza.feature.clients
+package com.dalcim.pizza.clients.ui
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.dalcim.pizza.R
-import com.dalcim.pizza.domain.Client
+import com.dalcim.pizza.core.model.Client
 import kotlinx.android.synthetic.main.item_client.view.*
 
 class ClientsAdapter : RecyclerView.Adapter<ClientsAdapter.ClientViewHolder>() {
@@ -33,7 +33,7 @@ class ClientsAdapter : RecyclerView.Adapter<ClientsAdapter.ClientViewHolder>() {
 
     inner class ClientViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        fun render(client:Client) {
+        fun render(client: Client) {
             itemView.icliTxtName.text = client.name
         }
     }

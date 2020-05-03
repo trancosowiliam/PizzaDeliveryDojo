@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/listClientsFragment">
+
+    <fragment
+        android:id="@+id/listClientsFragment"
+        android:name="com.dalcim.pizza.clients.ui.ListClientsFragment"
+        android:label="fragment_list_clients"
+        tools:layout="@layout/fragment_list_clients">
+        <action
+            android:id="@+id/action_listClientsFragment_to_addClientFragment"
+            app:destination="@id/addClientFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addClientFragment"
+        android:name="com.dalcim.pizza.clients.ui.AddClientFragment"
+        android:label="fragment_add_client"
+        tools:layout="@layout/fragment_add_client" />
+</navigation>

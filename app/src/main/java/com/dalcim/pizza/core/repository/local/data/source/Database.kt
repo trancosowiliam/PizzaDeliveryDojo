@@ -1,6 +1,6 @@
-package com.dalcim.pizza.model
+package com.dalcim.pizza.core.repository.local.data.source
 
-import com.dalcim.pizza.domain.Client
+import com.dalcim.pizza.core.model.Client
 
 class Database {
 
